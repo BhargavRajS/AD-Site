@@ -1,0 +1,95 @@
+/* Base font faces */
+@font-face {
+  font-family: "RoundedElegance";
+  src: url() format("truetype"), 
+       url(fonts/RoundedEleganceRegular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "AvenirRegular";
+  src: url(fonts/AvenirRegular.ttf) format("truetype");
+  font-weight: Regular;
+}
+
+/* Section styling */
+#parceria{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+#parceria .content {
+  text-align: center;
+  padding: 30px;
+  background-color: transparent;
+}
+
+#parceria h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #682c80;
+}
+
+#parceria p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Container for the logos */
+.logo-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.logos {
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+
+.logo_items {
+  display: flex;
+}
+
+.logo_items img {
+  width: 100px;
+  margin: 0 20px;
+  height: auto;
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  #parceria h2 {
+    font-size: 30px;
+  }
+
+  #parceria p {
+    font-size: 18px;
+  }
+
+  .logo_items img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  #parceria h2 {
+    font-size: 30px;
+  }
+
+  #parceria p {
+    font-size: 0.9em;
+  }
+
+  .logo_items img {
+    width: 60px;
+  }
+}

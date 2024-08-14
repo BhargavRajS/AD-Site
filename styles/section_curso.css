@@ -1,0 +1,133 @@
+/* Base font faces */
+@font-face {
+  font-family: "RoundedElegance";
+  src: url() format("truetype"), 
+       url(fonts/RoundedEleganceRegular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "AvenirRegular";
+  src: url(fonts/AvenirRegular.ttf) format("truetype");
+  font-weight: Regular;
+}
+
+/* Section styling */
+section#cursos {
+  padding: 60px 0;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  background: #0a0a0a;
+}
+
+section#cursos h2 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.5em;
+  color: #682c80;
+  text-align: center;
+  font-family: 'AvenirRegular', sans-serif;
+}
+
+.container-title {
+  margin: 0 20%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 0 !important;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.card-container {
+  margin: 0 10%;
+  display: flex;
+  gap: 20px;
+  max-width: 100%;
+  padding: 20px;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 0 23%;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #25262a;
+  color: white;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+}
+
+.card:hover {
+  background-color: #812DCC;
+}
+
+.icon img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin: 10px 0;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1200px) {
+  .card {
+    flex: 1 0 30%; /* Three cards per row for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 0 45%; /* Two cards per row for small screens */
+  }
+  section#cursos h2 {
+    font-size: 40px;
+  }
+  .container-title {
+    margin: 0 10%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 1 0 90%; /* One card per row for extra small screens */
+  }
+  section#cursos h2 {
+    font-size: 30px;
+  }
+  .container-title {
+    margin: 0 5%;
+    font-size: 15px;
+  }
+  .icon img {
+    width: 50px;
+    height: 50px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+}

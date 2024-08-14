@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width" />
+  <title>SEO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/SMMStyle.css">
+  <!-- <link href="section_CF.scss" rel="stylesheet/scss" type="text/css"> -->
+  <link rel="stylesheet" href="./static/css/main.css">
+</head>
+
+<body>
+
+  <header>
+     <!-- <a href="#" class="logo">ANGSTROHM</a> -->
+     <a href="../Amgstrohm/index.html" class="logo"><img src="images/AD-logo-White.webp" alt="ANGSTROHM Logo"></a>
+
+     <div class="menuToggle"></div>
+     <nav>
+      <ul>
+          <li> <a href="../Amgstrohm/index.html">Home</a></li>
+          <li> <a href="../Amgstrohm/About.html">About</a></li>
+          <li> <a href="#">Services<b>▼</b></a>
+           <ul>
+            <li> <a href="../Amgstrohm/Social%20Media%20Marketing.html">SOCIAL MEDIA MARKETING</a></li>
+            <li> <a href="../Amgstrohm/Creative%20Marketing.html">CREATIVE MARKETING</a></li>
+            <li> <a href="../Amgstrohm/Performance%20Marketing.html">PERFORMANCE MARKETING</a></li>
+            <li> <a href="../Amgstrohm/SEO.html">SEO</a></li>
+            <li> <a href="../Amgstrohm/Wed%20Development.html">WEB DEVELOPMENT</a></li>
+           </ul></li>
+          <li> <a href="../Amgstrohm/Career.html">Career </a></li>
+          <li> <a href="#">Blog</a></li>
+          <li> <a href="../Amgstrohm/Contact.html">Contact</a></li>
+      </ul>
+      </div>
+  </nav>
+ </header>
+
+
+ <script>
+   let menuToggle = document.querySelector('.menuToggle');
+   let Header = document.querySelector('header');
+   menuToggle.onclick=function(){
+     Header.classList.toggle('active');
+   }
+ </script>
+
+
+<section class="wrap-banner">
+  <div>
+   <h1> SEO</h1>
+   <!-- <h2>DIGITAL AGENCY</h2> -->
+   </div>
+ </section>
+
+
+
+<section id="custom-section">
+  <div class="custom-container">
+    <div class="custom-content-left">
+      <div class="custom-row">
+        <div class="custom-img-wrapper">
+          <img src="images/SEO-Big-image.webp" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="custom-content-right">
+      <div class="custom-content">
+        <h3 class="white-text" style="color: white;">DRIVE ORGANIC TRAFFIC</h3>
+        <h3 class="purple-text" style="color: #812dcc;">HARNESS SEO POWER</h3>
+        <h3 class="white-text" style="color: white;">DOMINATE SEARCH RANKINGS</h3>
+        <h3 class="purple-text" style="color: #812dcc;">ACHIEVE ORGANIC GROWTH</h3>
+        <p>Are you ready to dive into the wild, ever-evolving realm of SEO? Brace yourself for an adrenaline-fuelled 
+          adventure where algorithms dance, keywords reign supreme, and websites go head-to-head in an epic battle for 
+          digital dominance. Let’s unleash the power of Search Engine Optimisation and embark on an exhilarating journey that 
+          will take your website to new heights.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const section = document.getElementById('custom-section');
+    const image = section.querySelector('.custom-img-wrapper img');
+    const contentRight = section.querySelector('.custom-content-right');
+
+    const handleScroll = () => {
+      const sectionTop = section.getBoundingClientRect().top;
+      const sectionBottom = section.getBoundingClientRect().bottom;
+      const windowHeight = window.innerHeight;
+
+      if (sectionTop < windowHeight && sectionBottom >= 0) {
+        image.classList.add('visible');
+        contentRight.classList.add('visible');
+      } else {
+        image.classList.remove('visible');
+        contentRight.classList.remove('visible');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Run on initial load
+  });
+</script>
+
+
+
+
+<section style="overflow: hidden;" class="socialMediaAdventure">
+
+  <h2>UNLOCKING DIGITAL DOMINANCE</h2>
+  <h3>UNLOCKING SUCCESS WITH SEARCH OPTIMISATION</h3>
+
+  <div class="contentContainer">
+    <div class="flexRow">
+      <div class="flexColumn left">
+        <p>Search Engine Optimisation, or SEO, is the secret ingredient that adds a touch of magic to your website, 
+          akin to granting it a VIP pass to the most happening party in town – the digital landscape. This is where visibility, 
+          traffic, and success form an unbeatable trio. SEO is about optimising your website to rank higher in search engine results, 
+          enhancing its visibility, and thereby drawing more traffic. It’s about understanding what your target audience is searching for 
+          and creating content that answers their queries, meeting their needs effectively.</p>
+      </div>
+      <div class="flexColumn right">
+        <p>However, SEO isn’t just about making your website appealing to search engine bots; it’s also about enhancing the user experience. 
+          A user-friendly website with a clean design, easy navigation, and high-quality content is more likely to build trust and credibility 
+          with your audience. In the grand scheme of things, SEO is your ticket to increased visibility, leading to more traffic and opportunities
+           for conversion, ultimately driving business growth. It’s a long-term strategy, but one that offers significant returns, making your website\
+            a VIP in the digital world.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="imageContainer">
+    <img src="images/SEO-Middle-header.webp" alt="Social Media Adventure">
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const section = document.querySelector('.socialMediaAdventure');
+    const leftColumn = section.querySelector('.flexColumn.left');
+    const rightColumn = section.querySelector('.flexColumn.right');
+
+    const handleScroll = () => {
+      const sectionTop = section.getBoundingClientRect().top;
+      const sectionBottom = section.getBoundingClientRect().bottom;
+      const windowHeight = window.innerHeight;
+
+      if (sectionTop < windowHeight && sectionBottom >= 0) {
+        leftColumn.classList.add('visible');
+        rightColumn.classList.add('visible');
+      } else {
+        leftColumn.classList.remove('visible');
+        rightColumn.classList.remove('visible');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Run on initial load
+  });
+</script>
+
+
+
+<section class="section-background">
+  <div class="content-container1">
+      <h2>ANALYTICS AND REPORTING</h2>
+      <div class="grid">
+          <div class="item">
+              <img class="icon" src="images/imageedit_5_9874008543.png" alt="Personalised Content Icon">
+              <h3>Data-Driven Universe</h3>
+              <p>Emphasises the strategic role in making data-driven decisions for effective SEO efforts.</p>
+          </div>
+          <div class="item">
+              <img class="icon" src="images/imageedit_3_7112647365.png" alt="Stories and Reels Icon">
+              <h3>Comprehending SEO Efforts</h3>
+              <p>Understanding the implications and results of SEO for further strategy formulation.</p>
+          </div>
+          <div class="item">
+              <img class="icon" src="images/imageedit_10_5504813695.png" alt="Social Commerce Icon">
+              <h3>Monitoring Performance</h3>
+              <p>Represents the ongoing assessment of SEO efforts, crucial for ensuring goal achievement.</p>
+          </div>
+          <div class="item">
+              <img class="icon" src="images/imageedit_6_4758786992.png" alt="Influencer Collaboration Icon">
+              <h3>Website Metrics</h3>
+              <p>Symbolises the in-depth analysis of various website metrics to assess and improve performance.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const section = document.querySelector('.section-background');
+    const items = section.querySelectorAll('.item');
+
+    const handleScroll = () => {
+      const sectionTop = section.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (sectionTop < windowHeight - 100) {
+        items.forEach((item, index) => {
+          setTimeout(() => {
+            item.classList.add('visible');
+          }, index * 200); // Delay each item by 200ms
+        });
+      } else {
+        items.forEach((item) => {
+          item.classList.remove('visible');
+        });
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Run on initial load
+  });
+</script>
+
+
+
+<section id="cont" style="padding-top: 50px; padding-bottom: 50px;">
+  <h2 style="color: #812dcc;">BLUEPRINT TO DIGITAL SUCCESS</h2>
+        <h3 style="color: white;">UNLEASHING ON-PAGE SEO POWER</h3>
+  <div class="container1">
+    
+    <div class="contentLeft">
+      <div class="row">
+        <div class="imgWrapper">
+          <img src="images/SEO-blueprint-image.webp" alt="">
+        </div>
+        
+      </div>
+    </div>
+    <div class="contentRight">
+      <div class="content">
+
+        <p>Behold the wizard of the digital realm – “On-Page SEO.” With a wave of its SEO wand, this mystical force weaves 
+          its magic to transform your website’s content into a captivating masterpiece. With meticulous precision, On-Page 
+          SEO sprinkles just the right keywords throughout your pages, casting a spell that leaves search engines enchanted. 
+          Mesmerising meta tags and alluring headings are carefully crafted, beckoning search engine crawlers to explore your 
+          digital kingdom.</p>
+
+            <p>Your website becomes a beacon of relevance, attracting the attention it deserves in the vast online landscape.
+              On-Page SEO, the charismatic champion, conjures an enchanting fusion of captivating content and optimized elements,
+               mesmerising both audience and search engines alike.</p>
+          
+           <p>But wait, there’s more! On-Page SEO is not just about appeasing the search engine gods. It understands the delicate 
+            balance between optimising for search engines and delivering genuine value to human readers. With On-Page SEO as your 
+            ally, your website becomes a haven of enchanting content, ensuring that both search engine crawlers and eager visitors 
+            can’t resist its alluring charm.</p>
+         <button>BOOST YOUR RANKINGS</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const section = document.getElementById('cont');
+    const h2 = section.querySelector('h2');
+    const h3 = section.querySelector('h3');
+
+    const handleScroll = () => {
+      const sectionTop = section.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (sectionTop < windowHeight - 100) {
+        h2.classList.add('visible');
+        setTimeout(() => {
+          h3.classList.add('visible');
+        }, 300); // Delay for h3
+      } else {
+        h2.classList.remove('visible');
+        h3.classList.remove('visible');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Run on initial load
+  });
+</script>
+
+
+
+<section id="cont2" style="padding-top: 50px; padding-bottom: 50px;">
+  <h2 style="color: #812dcc;">DOMINATING DIGITAL SPACES</h2>
+  <h3 style="color: white;">EMBRACING OFF-PAGE SEO TACTICS</h3>
+  <div class="container1" style="margin-top: 40px;">
+    <div class="contentLeft">
+      <div class="content">
+        <p>Prepare to be amazed by the sorcerer of the digital cosmos – “Off-Page SEO.” With its arsenal of mystical powers, 
+          Off-Page SEO propels your website’s reputation to celestial heights. Armed with the ancient art of link building, 
+          it forges a formidable network of backlinks that resoundingly declare to the world, ‘Behold, this website is truly 
+          extraordinary!’ Each backlink acts as a herald, beckoning curious visitors to explore the wonders that await within.</p>
+        <p>As Off-Page SEO unleashes its magic, your website ascends in the eyes of search engines, ascending the ranks and securing 
+          its place among the celestial stars. But that’s not all – this valiant protector embraces the vibrant realm of social media, 
+          wielding its social media wizardry to amplify your brand’s visibility and authority. Like a beacon in the digital night, Off-Page
+           SEO harnesses the power of social platforms, spreading your message far and wide.</p>
+        <p>It conjures captivating content and sparks engaging conversations that captivate audiences, drawing them closer to your brand. 
+          By harnessing the ever-flowing currents of social media, Off-Page SEO fortifies your digital presence, building a loyal following 
+          and solidifying your brand’s authority in the vast and ever-expanding digital realm.</p>
+          <p>Prepare to soar among the stars with Off-Page SEO as your celestial guide, as it propels your website’s reputation to the 
+            celestial heights it deserves.</p>
+         
+        <button>ACCELERATE YOUR SEO</button>
+      </div>
+    </div>
+    <div class="contentRight">
+      <div class="row">
+      
+        <div class="image-section">
+          <img src="images/SEO-tactics-1.webp" alt="Image 1">
+          <img style="padding-top: 70px;" src="images/SEO-tactics-2.webp" alt="Image 2">
+      </div>
+      
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="cardsec1" style="color: #812dcc;">
+  <h2>UNCOVERING TECHNICAL SEO</h2>
+  <p>Equipped with an arsenal of website tweaks, blazing fast loading speeds, and mobile-friendliness enchantments, 
+    Technical SEO ensures your website is a well-oiled machine that search engines simply can’t resist. This meticulous 
+    mastermind addresses technical aspects like crawlability, site structure, indexing, and XML sitemaps, ensuring your 
+    website sails smoothly for search engines and visitors.</p> 
+    <div class="images-container">
+      <div class="image-card">
+        <img src="images/young-businesswoman-searches-data-with-magnifying-glass-generated-by-ai.webp" alt="Facebook Ads">
+        <div class="image-text">SITE OPTIMISATION</div>
+      </div>
+      <div class="image-card">
+        <img src="images/connecting-world-with-wireless-technology-tonight-generated-by-ai.webp" alt="Instagram Ads">
+        <div class="image-text">MOBILE FRIENDLY</div>
+      </div>
+      <div class="image-card">
+        <img src="images/businessmen-sitting-desk-using-wireless-technology-generated-by-ai.webp" alt="YouTube Ads">
+        <div class="image-text">OPTIMIZED SITE</div>
+      </div>
+</section>
+
+
+
+<section id="copywriting-section">
+  <h2 style="color: #812dcc;">GEOGRAPHIC GENIUS</h2>
+        <h3 style="color: white;">EXPLORING THE IMPACT OF LOCAL SEO</h3>
+  <div class="container1">
+    
+    <div class="contentLeft">
+      <div class="row">
+        <div class="imgWrapper">
+          <img src="images/SEO-geo-image1.webp" alt="">
+        </div>
+        
+      </div>
+    </div>
+    <div class="contentRight">
+      <div class="content">
+
+        <p>Introducing the friendly neighbourhood guide, “Local SEO,” here to put your business on the map—literally! With its 
+          expert touch, Local SEO optimises your online presence to specifically target local customers. By harnessing the power 
+          of location-based searches, this dynamic force helps your business ascend to new heights in the local search results.</p>
+
+            <p>Imagine your business standing tall, proudly visible to those seeking local solutions. Local SEO is your beacon 
+              in the community, illuminating the path for potential customers to discover your offerings and connect with your brand.</p>
+           
+              <p>But that’s not all—Local SEO possesses an extraordinary ability to drive foot traffic and supercharge conversions. By harnessing 
+                its potent force, your business becomes an irresistible magnet in the local landscape. With Local SEO as your ally, your 
+                establishment shines bright in the community, attracting eager customers to your doorstep.</p>
+          
+           <p>Its mastery of local search Optimisation unveils your business to the right audience at the right time, fuelling increased 
+            foot traffic and ensuring a steady stream of conversions. Say goodbye to being hidden in the shadows and hello to the radiant 
+            glow of success with Local SEO guiding your business to the forefront of the local scene.
+           </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const section = document.getElementById('copywriting-section');
+    const h2 = section.querySelector('h2');
+    const h3 = section.querySelector('h3');
+
+    const handleScroll = () => {
+      const sectionTop = section.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (sectionTop < windowHeight - 100) {
+        h2.classList.add('visible');
+        setTimeout(() => {
+          h3.classList.add('visible');
+        }, 200); // Delay for h3
+      } else {
+        h2.classList.remove('visible');
+        h3.classList.remove('visible');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Run on initial load
+  });
+</script>
+
+
+<section id="cont2" style="padding-top: 50px; padding-bottom: 50px;">
+  <h2 style="color: #812dcc;">GOING MOBILE, GETTING NOTICED</h2>
+  <h3 style="color: white;">CLIMBING RANKS WITH MOBILE SEO</h3>
+  <div class="container1" style="margin-top: 40px;">
+    <div class="contentLeft">
+      <div class="content">
+        <p>In the age of smartphones and virtual assistants, let the superheroes of the digital realm, “Mobile SEO,” come 
+          to your rescue. With their unparallelled expertise, these champions ensure that your website is not only 
+          mobile-friendly but also optimized for the booming trend of voice searches. In this fast-paced world, where 
+          mobile devices have become an extension of ourselves, Mobile SEO rises to the occasion, ensuring that your website 
+          stands tall and performs seamlessly on every screen size.</p>
+        <p>From smartphones to tablets and everything in between, Mobile SEO unlocks the power of compatibility, delivering 
+          exceptional user experiences across all devices. Say goodbye to frustrating mobile browsing experiences and hello to 
+          a future where your website effortlessly caters to the needs of your mobile audience.</p>
+        <p>IBut that’s not all! Mobile SEO understands that the world is on the move, and virtual assistants have become 
+          our trusted companions. With their expertise, they optimize your website to shine in the realm of voice searches. 
+          As more users rely on voice commands to find information and make decisions, Mobile SEO ensures that your content 
+          is structured and tailored to answer these spoken queries effectively.</p>
+          <p>By embracing the rising tide of voice searches, Mobile SEO helps your brand remain visible and accessible 
+            to the ever-expanding audience that interacts with their devices through voice assistants. It’s time to embrace 
+            the power of Mobile SEO and embark on a journey where your website thrives in the mobile-driven era, captivating 
+            users and paving the way for exceptional digital experiences.</p>
+          <button>RANK HIGHER TODAY</button>
+      </div>
+    </div>
+    <div class="contentRight">
+      <div class="row">
+      
+        <div class="image-section">
+          <img src="images/SEO-mobile-1.webp" alt="Image 1">
+          <img style="padding-top: 70px;" src="images/SEO-mobile-2.webp" alt="Image 2">
+      </div>
+      
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <section id="contato">
+    <!-- <div class="content"> -->
+      <!-- <div class="container"> -->
+
+        <div class="pg-footer">
+          <footer class="footer">
+            <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+              <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
+            </svg>
+            <div class="footer-content">
+              <div class="footer-content-column">
+                <div class="footer-logo">
+                  <a class="footer-logo-link"  >
+                    <img src="images/AD-logo-White.webp" alt="Company Logo"  style="
+                    width: 150px; /* Set the desired width */
+                    height: auto; /* Maintain the aspect ratio */
+                  " />
+                  </a>
+                </div>
+                <div class="footer-menu">
+                  <h2 class="footer-menu-name"> </h2>
+                  <ul id="menu-get-started" class="footer-menu-list">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                      <a href="#"></a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                      <a href="#"></a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                      <a href="#"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-content-column">
+                <div class="footer-menu">
+                  <h2 class="footer-menu-name"> Our Services</h2>
+                  <ul id="menu-company" class="footer-menu-list">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                      <a href="../Amgstrohm/Social%20Media%20Marketing.html">Social Media Marketing</a>
+                    </li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+                      <a href="../Amgstrohm/Creative%20Marketing.html">Creative Marketing</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                      <a href="../Amgstrohm/Performance%20Marketing.html">Performance Marketing</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                      <a href="../Amgstrohm/SEO.html">SEO</a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                      <a href="../Amgstrohm/Wed%20Development.html">Web Development</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-menu">
+                  <h2 class="footer-menu-name"> </h2>
+                  <ul id="menu-legal" class="footer-menu-list">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
+                      <a href="#"></a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                      <a href="#"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-content-column">
+                <div class="footer-menu">
+                  <h2 class="footer-menu-name"> Company</h2>
+                  <ul id="menu-quick-links" class="footer-menu-list">
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                      <a target="_blank" rel="noopener noreferrer" href="../Amgstrohm/About.html">About Us</a>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                      <a target="_blank" rel="noopener noreferrer" href="#">Blog</a>
+                    </li>
+                    
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                      <a href="../Amgstrohm/Career.html">Career</a>
+                    </li>
+                    
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                      <a href="#">Privacy Policy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-content-column">
+                <div class="footer-call-to-action">
+                  <h2 class="footer-call-to-action-title"> Address</h2>
+                  <p class="footer-call-to-action-description"> Unit 12-8, Menara 1 MK, Jalan Kiara, Mont Kiara 50480 Kuala Lumpur</p>
+                  <!-- <a class="footer-call-to-action-button button" href="#" target="_self"> Get in Touch </a> -->
+                </div>
+                <div class="footer-call-to-action">
+                  <h2 class="footer-call-to-action-title"> More Info</h2>
+                  <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link" href="tel:0124-64XXXX" target="_self"> hello@angstrohmdigital.com <br>
+                    9:00 A.M – 6:00 P.M </a></p>
+                  </div>
+              </div>
+              <div class="footer-social-links"> <svg class="footer-social-amoeba-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 54">
+                  <path class="footer-social-amoeba-path" d="M223.06,43.32c-.77-7.2,1.87-28.47-20-32.53C187.78,8,180.41,18,178.32,20.7s-5.63,10.1-4.07,16.7-.13,15.23-4.06,15.91-8.75-2.9-6.89-7S167.41,36,167.15,33a18.93,18.93,0,0,0-2.64-8.53c-3.44-5.5-8-11.19-19.12-11.19a21.64,21.64,0,0,0-18.31,9.18c-2.08,2.7-5.66,9.6-4.07,16.69s.64,14.32-6.11,13.9S108.35,46.5,112,36.54s-1.89-21.24-4-23.94S96.34,0,85.23,0,57.46,8.84,56.49,24.56s6.92,20.79,7,24.59c.07,2.75-6.43,4.16-12.92,2.38s-4-10.75-3.46-12.38c1.85-6.6-2-14-4.08-16.69a21.62,21.62,0,0,0-18.3-9.18C13.62,13.28,9.06,19,5.62,24.47A18.81,18.81,0,0,0,3,33a21.85,21.85,0,0,0,1.58,9.08,16.58,16.58,0,0,1,1.06,5A6.75,6.75,0,0,1,0,54H236C235.47,54,223.83,50.52,223.06,43.32Z"></path>
+                </svg>
+                <a class="footer-social-link linkedin" href="https://www.linkedin.com/company/angstrohm-digital/" target="_blank">
+                  <span class="hidden-link-text">Linkedin</span>
+                  <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 30 30">
+                    <path class="footer-social-icon-path" d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z"></path>
+                  </svg>
+                </a>
+                <a class="footer-social-link facebook" href="https://www.facebook.com/angstrohmdigital" target="_blank">
+                  <span class="hidden-link-text">Facebook</span>
+                  <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path class="footer-social-icon-path" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.49v-9.294H9.691v-3.622h3.124V8.413c0-3.1 1.893-4.788 4.658-4.788 1.325 0 2.464.098 2.794.142v3.24l-1.918.001c-1.504 0-1.794.715-1.794 1.763v2.31h3.588l-.467 3.622h-3.121V24h6.116c.732 0 1.325-.593 1.325-1.325V1.325C24 .593 23.407 0 22.675 0z"/>
+                  </svg>
+                </a>
+                <a class="footer-social-link instagram" href="https://www.instagram.com/angstrohmdigital/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank">
+                  <span class="hidden-link-text">Instagram</span>
+                  <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path class="footer-social-icon-path" d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.343 3.608 1.318.975.975 1.256 2.242 1.318 3.608.058 1.266.07 1.645.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.343 2.633-1.318 3.608-.975.975-2.242 1.256-3.608 1.318-1.266.058-1.645.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.343-3.608-1.318-.975-.975-1.256-2.242-1.318-3.608-.058-1.266-.07-1.645-.07-4.85s.012-3.584.07-4.85c.062-1.366.343-2.633 1.318-3.608.975-.975 2.242-1.256 3.608-1.318 1.266-.058 1.645-.07 4.85-.07m0-2.163C8.756 0 8.322.012 7.053.07 5.777.132 4.52.413 3.467 1.467 2.413 2.52 2.132 3.777 2.07 5.053.012 8.322 0 8.756 0 12s.012 3.678.07 4.947c.062 1.276.343 2.533 1.397 3.587.975.975 2.242 1.256 3.608 1.318 1.266.058 1.645.07 4.85.07s3.584-.012 4.85-.07c1.366-.062 2.633-.343 3.608-1.318.975-.975 1.256-2.242 1.318-3.608.058-1.266.07-1.645.07-4.85s-.012-3.678-.07-4.947c-.062-1.276-.343-2.533-1.318-3.608-.975-.975-2.242-1.256-3.608-1.318-1.266-.058-1.645-.07-4.85-.07z"/>
+                    <path class="footer-social-icon-path" d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.998 3.998 0 110-7.996 3.998 3.998 0 010 7.996z"/>
+                    <circle class="footer-social-icon-path" cx="18.406" cy="5.594" r="1.44"/>
+                  </svg>
+                </a>
+
+                <!-- <a class="footer-social-link github" href="#" target="_blank">
+                  <span class="hidden-link-text">Github</span>
+                  <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <path class="footer-social-icon-path" d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z "></path>
+                  </svg>
+                </a>-->
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="footer-copyright-wrapper">
+                <p class="footer-copyright-text">
+                  <a class="footer-copyright-link" href="#" target="_self">© 2024 by Angstrohm Digital Sdn Bhd.(1460581-X) All rights reserved. </a>
+                </p>
+              </div>
+            </div>
+<!--
+
+        <img class="img_lateral" src="images/techs-1.svg" alt="Logo do Electron, Graphql e JavaScript">
+        <div>
+          <img src="images/yoda.svg" alt="Yoda">
+          <div>
+            <strong>Receba conteúdos exclusivos</strong>
+            <span>Receber spam, você não irá!</span>
+            <div>
+              <input type="email" placeholder="Digite seu melhor email">
+              <img src="images/send.svg">
+            </div>
+          </div>
+        </div>
+        <img class="img_lateral" src="images/techs-2.svg" alt="Logo do Node, React e Git">
+      </div>
+    </div>
+  </section>
+
+  <div class="content">
+    <div class="container">
+      <p><b>Rocketseat ©</b> 2020 - Todos os direitos reservados</p>
+      <ul>
+        <li>Direitos autorais</li>
+        <li>Termos de uso</li>
+        <li>Política de privacidade</li>
+        <li>Consulta de certificados</li>
+      </ul> -->
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+
+</html>

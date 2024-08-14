@@ -1,0 +1,159 @@
+:root
+{
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgb(119, 119, 119);
+  font-size: 20px;
+}
+
+body
+{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+h2
+{
+  color: rgb(51, 51, 51);
+}
+
+section
+{
+  display: flex;
+  flex-basis: 50%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+
+
+
+section > copy,
+section > images
+{
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+  align-self: center;
+}
+
+section > copy
+{
+  padding: 0 2rem 0 0;
+}
+
+
+images
+{
+
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 3fr 1fr;
+
+  grid-template-rows: 1fr 1fr 3fr 1.5fr 5fr 2fr;
+  height: 600px;
+  padding: 1rem;
+
+
+
+  img
+  { 
+    // max-width:200px;
+    width: 100%;
+    height: auto;
+
+    border-radius: .5rem;
+
+    margin: 0;
+    padding: 0;
+
+
+    -webkit-box-shadow: 0px 0px 33px -6px rgba(0,0,0,0.52);
+    -moz-box-shadow: 0px 0px 33px -6px rgba(0,0,0,0.52);
+    box-shadow: 0px 0px 33px -6px rgba(0,0,0,0.52);
+
+    transition: box-shadow .5s, transform .3s;
+
+
+  }
+
+
+
+  img:hover
+  {
+    transform: translateY(-10px);
+
+    -webkit-box-shadow: 0px 18px 33px 10px rgba(0,0,0,0.31);
+    -moz-box-shadow: 0px 18px 33px 10px rgba(0,0,0,0.31);
+    box-shadow: 0px 18px 33px 10px rgba(0,0,0,0.31);
+
+    z-index: 100 !important;
+  }
+
+
+
+
+  .dropbox
+  {
+    grid-column: 7 / -1;
+    grid-row: 2 / span 4;
+    z-index: 5;
+  }
+
+  .space
+  {
+    grid-column: 1 / span 4;
+    grid-row: 5 / span 1;
+    z-index: 2;
+  }
+
+  .tropical
+  {
+    grid-column: 3 / span 5;
+    grid-row: 3 / span 5;
+    z-index: 4;
+  }
+
+  .flowers
+  {
+    grid-column: 2 / span 4;
+    grid-row: 1 / span 3;
+    z-index: 3;
+  }
+
+  .google
+  {
+    grid-column: 4 / span 6;
+    grid-row: 4 / -1;
+    z-index: 3;
+  }
+}
+
+
+
+
+
+
+.original
+{
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: block;
+}
+
+.link_to_original
+{
+  background: bisque;
+  padding: 1rem;
+  color: unset;
+  text-decoration: none;
+  margin: 2rem auto;
+  display: inline-block;
+  text-align: center;
+}

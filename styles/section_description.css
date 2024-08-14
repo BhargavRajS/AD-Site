@@ -1,0 +1,125 @@
+/* Base font faces */
+@font-face {
+  font-family: "RoundedElegance";
+  src: url() format("truetype"), 
+       url(fonts/RoundedEleganceRegular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "AvenirRegular";
+  src: url(fonts/AvenirRegular.ttf) format("truetype");
+  font-weight: Regular;
+}
+
+/* Background and base styles */
+#descricao {
+  background-image: url('images/Artboard-18@3x-300x300.png');
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: contain;
+  background-position: center;
+  padding: 60px 0;
+  padding-top: 150px;
+  height: 90vh;
+}
+
+/* Container styling */
+section#descricao .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+section#descricao .container {
+  width: 100%;
+}
+
+/* Typewriter effect */
+section#descricao .container .typewriter h1 {
+  color: #fff;
+  font-family: 'RoundedElegance', sans-serif;
+  overflow: hidden;
+  border-right: 0px solid #682c80;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  font-size: 100px;
+  text-align: center;
+  width: 100%;
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #682c80; }
+}
+
+/* Paragraph styling */
+section#descricao .container p {
+  color: #ffffff;
+  line-height: 0px;
+  margin-top: 70px;
+  font-size: 90px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Responsive design for smaller screens */
+@media only screen and (max-width: 1200px) {
+  section#descricao .container .typewriter h1 {
+    font-size: 80px;
+  }
+  section#descricao .container p {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  section#descricao .container .typewriter h1 {
+    font-size: 60px;
+  }
+  section#descricao .container p {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  section#descricao .content img {
+    display: none;
+  }
+  section#descricao .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  section#descricao .container {
+    width: 90%;
+  }
+  section#descricao .container .typewriter h1 {
+    font-size: 40px;
+  }
+  section#descricao .container p {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  section#descricao {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  section#descricao .container .typewriter h1 {
+    font-size: 30px;
+  }
+  section#descricao .container p {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+}
