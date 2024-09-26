@@ -141,7 +141,7 @@ section#cont{
 
 /* Button */
 section#cont .content button {
-    background: #7159C1;
+    background: #682c80;
     height: 50px;
     padding: 0 30px;
     border: 0;
@@ -350,6 +350,7 @@ section.team-container1 h3{
 
 .container2 {
   padding-top: 50px;
+  padding-bottom: 70px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

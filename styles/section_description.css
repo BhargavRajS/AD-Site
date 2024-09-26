@@ -48,7 +48,7 @@ section#descricao .container .typewriter h1 {
   text-align: center;
   width: 100%;
   animation: 
-    typing 3.5s steps(30, end),
+    typing 2s steps(30, end),
     blink-caret .5s step-end infinite;
 }
 

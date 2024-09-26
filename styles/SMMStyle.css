@@ -351,12 +351,13 @@ margin: 0 auto;
 }
 
 /* Button styling */
-section#cont .content button {
+section#cont button {
 background: #812dcc;
 height: 50px;
 padding: 0 30px;
 border: 0;
 border-radius: 5px;
+margin-left: 30px;
 color: #fff;
 font-size: 16px;
 font-weight: 600;
@@ -365,7 +366,7 @@ position: relative; /* Ensure positioning context for the pseudo-element */
 overflow: hidden; /* Hide overflow of the pseudo-element */
 }
 
-section#cont .content button::before {
+section#cont button::before {
 content: '';
 position: absolute;
 top: 0;
@@ -379,7 +380,7 @@ border-radius: 5px;
 transition: opacity 0.5s ease-in-out;
 }
 
-section#cont .content button:hover::before {
+section#cont button:hover::before {
 opacity: 1;
 }
 
@@ -396,7 +397,7 @@ opacity: 1;
 }
 }
 
-section#cont .content button:hover {
+section#cont  button:hover {
 animation: glowing 2s infinite;
 }
 
@@ -778,7 +779,7 @@ section#cont2 h3 {
 }
 
 section#cont2 .content button {
-  background: #7159C1;
+  background: #682c80;
   height: 50px;
   padding: 0 30px;
   border: 0;
@@ -1069,12 +1070,13 @@ section#copywriting-section {
 }
 
 /* Button styling */
-section#copywriting-section .content button {
+section#copywriting-section button {
   background: #812dcc;
   height: 50px;
   padding: 0 30px;
   border: 0;
   border-radius: 5px;
+  margin-left: 30px;
   color: #fff;
   font-size: 16px;
   font-weight: 600;
@@ -1083,7 +1085,7 @@ section#copywriting-section .content button {
   overflow: hidden; /* Hide overflow of the pseudo-element */
 }
 
-section#copywriting-section .content button::before {
+section#copywriting-section button::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1097,7 +1099,7 @@ section#copywriting-section .content button::before {
   transition: opacity 0.5s ease-in-out;
 }
 
-section#copywriting-section .content button:hover::before {
+section#copywriting-section button:hover::before {
   opacity: 1;
 }
 
@@ -1114,7 +1116,7 @@ section#copywriting-section .content button:hover::before {
   }
 }
 
-section#copywriting-section .content button:hover {
+section#copywriting-section button:hover {
   animation: glowing 2s infinite;
 }
 
