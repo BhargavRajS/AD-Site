@@ -97,6 +97,7 @@ position: relative;
   /* now, making it responsive*/
   @media (max-width: 900px)
   {
+   
     header
     {
       padding: 10px 20px;
@@ -163,15 +164,17 @@ display: initial;
 
     header.active .menuToggle::before
     {
-      transform: rotate(45deg);
+      transform: rotate(120deg);
       box-shadow: 0 0 #fff;
     }
 
     header.active .menuToggle::after
     {
-      transform: rotate(10deg);
+      transform: rotate(30deg);
     }
   }
+
+ 
 
   .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");

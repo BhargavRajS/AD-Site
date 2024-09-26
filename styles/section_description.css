@@ -114,6 +114,7 @@ section#descricao .container p {
   section#descricao {
     padding-top: 100px;
     padding-bottom: 100px;
+    height: 70vh;
   }
   section#descricao .container .typewriter h1 {
     font-size: 30px;

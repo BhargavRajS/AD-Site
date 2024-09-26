@@ -58,7 +58,7 @@ h2 {
     }
 
     .wrap-banner {
-        height: 50vh; /* Adjust height for smaller screens */
+        height: 40vh; /* Adjust height for smaller screens */
     }
 }
 
@@ -231,7 +231,7 @@ section#cont .content button {
   .contentRight .content p{
     font-size: 15px;
     line-height: 1.3em; 
-    margin-top: 0px; }
+    margin-top: 40px; }
 }
 
 
@@ -310,7 +310,7 @@ section#cont2 .column {
       font-size: 20px; /* Adjusted for mobile devices */
   }
   section#cont2 p {
-      font-size: 18px; /* Adjusted for mobile devices */
+      font-size: 15px; /* Adjusted for mobile devices */
       text-align: center; /* Center align text for smaller screens */
   }
   section#cont2 .row {
@@ -439,8 +439,8 @@ section.team-container1 h3{
   .container2 {
       flex-direction: column;
       align-items: center;
-      padding-left: 10px;
-        padding-right: 10px;
+      padding-left: 40px;
+        padding-right: 40px;
   }
   .our-team {
       width: 100%;

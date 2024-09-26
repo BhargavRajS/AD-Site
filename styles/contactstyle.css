@@ -72,6 +72,9 @@ h4 {
     padding-right: 10%;
     font-size: 14px;
   }
+  .col-xs-12 {
+    text-align: center;
+}
 }
 
 /* Inputs */
@@ -95,6 +98,9 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
   .styled-input {
     width: 100%;
   }
+  .col-xs-12 {
+    text-align: center;
+}
 }
 
 .styled-input label {
@@ -116,6 +122,9 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
   .styled-input.wide {
     width: 90%;
   }
+  .col-xs-12 {
+    text-align: center;
+}
 }
 
 input,
@@ -159,6 +168,9 @@ textarea {
     width: 90%;
     padding-bottom: 50px;
   }
+  .col-xs-12 {
+    text-align: center;
+}
 }
 
 .submit-btn {
@@ -185,6 +197,9 @@ textarea {
     width: 90%;
     text-align: center;
   }
+  .col-xs-12 {
+    text-align: center;
+}
 }
 
 @media (max-width: 768px) {
@@ -192,6 +207,9 @@ textarea {
       padding: 15px;
       margin: 8px 0;
   }
+  .col-xs-12 {
+    text-align: center;
+}
 }
 
 input[type=checkbox] + label {
@@ -202,5 +220,47 @@ input[type=checkbox] + label {
 input[type=checkbox]:checked + label {
   color: #f00;
   font-style: normal;
+}
+
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  h4 {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 14px;
+  }
+
+  .styled-input {
+    width: 100%; /* Ensure full width for inputs */
+    margin: 10px 0; /* Adjust margin for mobile */
+  }
+
+  .styled-input.wide {
+    width: 100%; /* Ensure wide inputs also span full width */
+  }
+
+  input[type="text"],
+  textarea {
+    padding: 15px; /* Reduce padding for smaller screens */
+    margin: 8px 0; /* Adjust margin for a more compact look */
+  }
+
+  .input-container {
+    width: 90%; /* Set container width to full screen */
+    padding-bottom: 50px; /* Adjust padding for mobile */
+  }
+
+  .submit-btn {
+    width: 100%; /* Full width for submit button */
+    text-align: center; /* Center the text */
+  }
+
+  .col-xs-12 {
+    text-align: center;
+  }
 }
 

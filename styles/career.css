@@ -70,7 +70,7 @@ h4 {
 @media (max-width: 768px) {
   .wrap-banner {
     height: 50vh;
-    margin-bottom: -50px;
+    margin-bottom: -100px;
     align-content: flex-end;
   }
 
@@ -326,6 +326,9 @@ p {
 
   #header {
     flex-direction: column; /* Stack items vertically on mobile */
+  
+      padding-left: 10%;
+      padding-right: 10%;
   }
 }
 
@@ -464,8 +467,8 @@ section#careersec .grid-container {
     flex-direction: column;
     padding-top: 30px;
     padding-bottom: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 10%;
+        padding-right: 10%;
   }
 
   section#careersec .container {
@@ -478,7 +481,7 @@ section#careersec .grid-container {
   }
 
   section#careersec .btn {
-    width: 100%;
+   
     padding: 0.5em 1em;
   }
 

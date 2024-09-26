@@ -148,9 +148,10 @@ section#cursos button:hover::before {
   }
   section#cursos h2 {
     font-size: 30px;
+    margin: 0 10%;
   }
   .container-title {
-    margin: 0 5%;
+    margin: 0 10%;
     font-size: 15px;
   }
   .icon img {

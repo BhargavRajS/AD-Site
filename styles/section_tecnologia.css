@@ -138,7 +138,10 @@ section#tecnologia .text-section button:hover {
   section#tecnologia .container {
     grid-template-columns: 1fr;
     max-width: 90%;
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .text-section {
@@ -162,7 +165,7 @@ section#tecnologia .text-section button:hover {
 
   .image-section {
     grid-column: 1 / -1;
-    grid-template-columns: 1fr;
+    grid-template-columns: fr;
   }
 
   .image-section img {
